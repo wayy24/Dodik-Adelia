@@ -1,242 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="id" class="scroll-smooth">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>notepad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Romeo & Juliet</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: '#8A9A86',
+                        emeraldCustom: '#1B3B2B',
+                        ivory: '#FAF9F5',
+                        gold: '#D4AF37'
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .paper-texture {
+            background-color: #FAF9F5;
+            background-image: radial-gradient(#8A9A86 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            background-opacity: 0.15;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+    </style>
 </head>
-<style type="text/css">
-ol,ul{
-display:block;
-list-style-type:none;
-margin:3px;
-}
-</style><body>
-<div>&lt;!DOCTYPE html&gt;<br>
-&lt;html lang="id" class="scroll-smooth"&gt;<br>
-&lt;head&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;title&gt;The Wedding of Romeo &amp; Juliet&lt;/title&gt;<br>
-&nbsp;&nbsp;&nbsp; <br>
-&nbsp;&nbsp;&nbsp; &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Montserrat:wght@300;400;500&amp;display=swap" rel="stylesheet"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;script&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tailwind.config = {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; theme: {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; extend: {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; colors: {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sage: '#8A9A86',<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; emeraldCustom: '#1B3B2B',<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ivory: '#FAF9F5',<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gold: '#D4AF37'<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fontFamily: {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; serif: ['Cormorant Garamond', 'serif'],<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sans: ['Montserrat', 'sans-serif']<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp; &lt;/script&gt;<br>
-&nbsp;&nbsp;&nbsp; <br>
-&nbsp;&nbsp;&nbsp; &lt;style&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .paper-texture {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color: #FAF9F5;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-image: radial-gradient(#8A9A86 0.5px, transparent 0.5px);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-size: 24px 24px;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-opacity: 0.15;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @keyframes float {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0%, 100% { transform: translateY(0px) rotate(0deg); }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 50% { transform: translateY(-10px) rotate(3deg); }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .animate-float { animation: float 6s ease-in-out infinite; }<br>
-&nbsp;&nbsp;&nbsp; &lt;/style&gt;<br>
-&lt;/head&gt;<br>
-&lt;body class="bg-ivory text-emeraldCustom font-sans paper-texture overflow-x-hidden"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;div id="music-control" class="fixed bottom-6 right-6 z-50 hidden"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button onclick="toggleMusic()" class="w-12 h-12 bg-emeraldCustom/80 text-gold rounded-full border border-gold/40 flex items-center justify-center backdrop-blur-md shadow-lg hover:scale-105 transition-all"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;i id="music-icon" class="fas fa-music text-lg"&gt;&lt;/i&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/button&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;audio id="bg-music" loop&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;/audio&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;section id="cover" class="fixed inset-0 z-50 flex flex-col items-center justify-center text-center bg-cover bg-center transition-all duration-1000" style="background-image: linear-gradient(rgba(27, 59, 43, 0.65), rgba(27, 59, 43, 0.65)), url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&amp;w=1600');"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="text-ivory px-6 max-w-lg"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="font-serif italic text-xl md:text-2xl text-gold tracking-widest block mb-2"&gt;The Wedding of&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1 class="font-serif text-5xl md:text-7xl font-normal mb-4 tracking-wide"&gt;Romeo &amp; Juliet&lt;/h1&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="font-sans font-light tracking-widest text-sm mb-8 text-ivory/80"&gt;24 OKTOBER 2026&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button onclick="openInvitation()" class="px-8 py-3 bg-gold/90 hover:bg-gold text-emeraldCustom font-medium rounded-full tracking-wider transition-all transform hover:scale-105 shadow-lg"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BUKA UNDANGAN<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/button&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;div id="main-content" class="opacity-0 transition-opacity duration-1000"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="fixed top-0 left-0 w-32 md:w-48 pointer-events-none opacity-20 animate-float"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;svg viewBox="0 0 100 100" fill="#8A9A86"&gt;&lt;path d="M30,10 Q50,30 30,50 Q10,30 30,10 Z"/&gt;&lt;/svg&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section class="py-24 px-6 max-w-4xl mx-auto text-center"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="font-serif italic text-sage text-2xl"&gt;Bismillahirrahmanirrahim&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="mt-4 text-sm text-emeraldCustom/70 max-w-md mx-auto leading-relaxed"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Dan di antara tanda-tanda (kebesaran-Nya) ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya."<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-xs text-gold font-semibold mt-2 tracking-widest"&gt;&#8212; QS. AR-RUM: 21 &#8212;&lt;/p&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="mt-16 grid md:grid-cols-2 gap-12 items-center"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="space-y-4"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="w-48 h-64 mx-auto rounded-t-full overflow-hidden border-2 border-gold/30 p-1"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&amp;w=400" alt="Romeo" class="w-full h-full object-cover rounded-t-full"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3 class="font-serif text-3xl text-emeraldCustom"&gt;Romeo Montague&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-xs text-sage tracking-wider uppercase"&gt;Putra Pertama Dari&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-emeraldCustom/80"&gt;Bpk. Montague &amp; Ibu Montague&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="space-y-4"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="w-48 h-64 mx-auto rounded-t-full overflow-hidden border-2 border-gold/30 p-1"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&amp;w=400" alt="Juliet" class="w-full h-full object-cover rounded-t-full"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3 class="font-serif text-3xl text-emeraldCustom"&gt;Juliet Capulet&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-xs text-sage tracking-wider uppercase"&gt;Putri Kedua Dari&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-emeraldCustom/80"&gt;Bpk. Capulet &amp; Ibu Capulet&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;hr class="border-gold/20 max-w-xs mx-auto"&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section class="py-16 bg-sage/10 my-12 text-center"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 class="font-serif text-3xl text-emeraldCustom mb-8"&gt;Menuju Hari Bahagia&lt;/h2&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex justify-center gap-4 md:gap-8 text-emeraldCustom"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="bg-ivory p-4 rounded-lg border border-gold/20 w-20"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span id="days" class="font-serif text-3xl font-bold block"&gt;00&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="text-xs text-sage uppercase"&gt;Hari&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="bg-ivory p-4 rounded-lg border border-gold/20 w-20"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span id="hours" class="font-serif text-3xl font-bold block"&gt;00&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="text-xs text-sage uppercase"&gt;Jam&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="bg-ivory p-4 rounded-lg border border-gold/20 w-20"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span id="minutes" class="font-serif text-3xl font-bold block"&gt;00&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="text-xs text-sage uppercase"&gt;Menit&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="bg-ivory p-4 rounded-lg border border-gold/20 w-20"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span id="seconds" class="font-serif text-3xl font-bold block"&gt;00&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="text-xs text-sage uppercase"&gt;Detik&lt;/span&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section class="py-16 px-6 max-w-4xl mx-auto"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid md:grid-cols-2 gap-8"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="bg-white/60 p-8 rounded-2xl border border-gold/20 text-center shadow-sm"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3 class="font-serif text-2xl text-emeraldCustom mb-2"&gt;Akad Nikah&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-sage mb-6"&gt;Sabtu, 24 Oktober 2026&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-emeraldCustom/80 mb-2"&gt;Pukul: 08.00 - 10.00 WIB&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-emeraldCustom/80 font-medium mb-6"&gt;Grand Ballroom Hotel Mulia, Jakarta&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="https://maps.google.com" target="_blank" class="inline-block px-6 py-2 border border-emeraldCustom text-emeraldCustom hover:bg-emeraldCustom hover:text-ivory rounded-full text-xs tracking-wider transition-all"&gt;GOOGLE MAPS&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="bg-white/60 p-8 rounded-2xl border border-gold/20 text-center shadow-sm"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3 class="font-serif text-2xl text-emeraldCustom mb-2"&gt;Resepsi&lt;/h3&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-sage mb-6"&gt;Sabtu, 24 Oktober 2026&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-emeraldCustom/80 mb-2"&gt;Pukul: 11.00 - 14.00 WIB&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-emeraldCustom/80 font-medium mb-6"&gt;Grand Ballroom Hotel Mulia, Jakarta&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="https://maps.google.com" target="_blank" class="inline-block px-6 py-2 border border-emeraldCustom text-emeraldCustom hover:bg-emeraldCustom hover:text-ivory rounded-full text-xs tracking-wider transition-all"&gt;GOOGLE MAPS&lt;/a&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section class="py-16 px-6 max-w-5xl mx-auto text-center"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 class="font-serif text-3xl text-emeraldCustom mb-8"&gt;Momen Bahagia&lt;/h2&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="grid grid-cols-2 md:grid-cols-3 gap-4"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&amp;w=500" class="rounded-lg object-cover w-full h-64 hover:opacity-90 transition-opacity"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&amp;w=500" class="rounded-lg object-cover w-full h-64 hover:opacity-90 transition-opacity"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&amp;w=500" class="rounded-lg object-cover w-full h-64 hover:opacity-90 transition-opacity"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section class="py-16 px-6 max-w-xl mx-auto"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="bg-white/80 p-8 rounded-2xl border border-gold/30 shadow-md"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 class="font-serif text-3xl text-emeraldCustom text-center mb-6"&gt;Konfirmasi Kehadiran&lt;/h2&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;form class="space-y-4"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type="text" placeholder="Nama Lengkap" class="w-full px-4 py-3 bg-ivory border border-sage/30 rounded-lg text-sm focus:outline-none focus:border-gold"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;select class="w-full px-4 py-3 bg-ivory border border-sage/30 rounded-lg text-sm focus:outline-none focus:border-gold"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Hadir&lt;/option&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option&gt;Tidak Dapat Hadir&lt;/option&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/select&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;textarea placeholder="Ucapan &amp; Doa" rows="4" class="w-full px-4 py-3 bg-ivory border border-sage/30 rounded-lg text-sm focus:outline-none focus:border-gold"&gt;&lt;/textarea&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button type="button" class="w-full py-3 bg-emeraldCustom text-ivory rounded-lg text-sm tracking-wider font-medium hover:bg-emeraldCustom/90 transition-all"&gt;KIRIM RSVP&lt;/button&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/form&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;section class="py-16 px-6 max-w-xl mx-auto text-center"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 class="font-serif text-3xl text-emeraldCustom mb-4"&gt;Amplop Digital&lt;/h2&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-emeraldCustom/70 mb-8"&gt;Doa restu Anda merupakan hadiah terindah bagi kami. Namun jika ingin memberi hadiah, Anda dapat mengirimpan melalui:&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="bg-white/80 p-6 rounded-xl border border-gold/30 shadow-sm inline-block w-full max-w-sm"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-xs text-sage uppercase font-semibold mb-2"&gt;BCA - Bank Central Asia&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="font-serif text-2xl font-bold text-emeraldCustom tracking-wider mb-1"&gt;123 456 7890&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-xs text-emeraldCustom/80 mb-4"&gt;a.n. Romeo Montague&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button onclick="navigator.clipboard.writeText('1234567890')" class="px-4 py-1.5 bg-sage/20 text-emeraldCustom text-xs rounded-full hover:bg-sage/40 transition-all"&gt;Salin Rekening&lt;/button&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;footer class="py-16 px-6 text-center border-t border-gold/20"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2 class="font-serif text-3xl text-emeraldCustom mb-4"&gt;Terima Kasih&lt;/h2&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="text-sm text-emeraldCustom/70 max-w-md mx-auto mb-8"&gt;Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="font-serif italic text-2xl text-gold"&gt;Romeo &amp; Juliet&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/footer&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
-<br>
-&nbsp;&nbsp;&nbsp; &lt;script&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const bgMusic = document.getElementById('bg-music');<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const musicIcon = document.getElementById('music-icon');<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; let isPlaying = false;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function openInvitation() {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById('cover').classList.add('-translate-y-full', 'opacity-0');<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById('main-content').classList.remove('opacity-0');<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById('music-control').classList.remove('hidden');<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Auto-play music<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bgMusic.play();<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; isPlaying = true;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function toggleMusic() {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (isPlaying) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bgMusic.pause();<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; musicIcon.classList.replace('fa-music', 'fa-pause');<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bgMusic.play();<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; musicIcon.classList.replace('fa-pause', 'fa-music');<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; isPlaying = !isPlaying;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Countdown Timer Logic<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const targetDate = new Date("October 24, 2026 08:00:00").getTime();<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setInterval(() =&gt; {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const now = new Date().getTime();<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const distance = targetDate - now;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }, 1000);<br>
-&nbsp;&nbsp;&nbsp; &lt;/script&gt;<br>
-&lt;/body&gt;<br>
-&lt;/html&gt;<br>
-</div>
+<body class="bg-ivory text-emeraldCustom font-sans paper-texture overflow-x-hidden">
+
+    <div id="music-control" class="fixed bottom-6 right-6 z-50 hidden">
+        <button onclick="toggleMusic()" class="w-12 h-12 bg-emeraldCustom/80 text-gold rounded-full border border-gold/40 flex items-center justify-center backdrop-blur-md shadow-lg hover:scale-105 transition-all">
+            <i id="music-icon" class="fas fa-music text-lg"></i>
+        </button>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <section id="cover" class="fixed inset-0 z-50 flex flex-col items-center justify-center text-center bg-cover bg-center transition-all duration-1000" style="background-image: linear-gradient(rgba(27, 59, 43, 0.65), rgba(27, 59, 43, 0.65)), url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600');">
+        <div class="text-ivory px-6 max-w-lg">
+            <span class="font-serif italic text-xl md:text-2xl text-gold tracking-widest block mb-2">The Wedding of</span>
+            <h1 class="font-serif text-5xl md:text-7xl font-normal mb-4 tracking-wide">Romeo & Juliet</h1>
+            <p class="font-sans font-light tracking-widest text-sm mb-8 text-ivory/80">24 OKTOBER 2026</p>
+            <button onclick="openInvitation()" class="px-8 py-3 bg-gold/90 hover:bg-gold text-emeraldCustom font-medium rounded-full tracking-wider transition-all transform hover:scale-105 shadow-lg">
+                BUKA UNDANGAN
+            </button>
+        </div>
+    </section>
+
+    <div id="main-content" class="opacity-0 transition-opacity duration-1000">
+
+        <div class="fixed top-0 left-0 w-32 md:w-48 pointer-events-none opacity-20 animate-float">
+            <svg viewBox="0 0 100 100" fill="#8A9A86"><path d="M30,10 Q50,30 30,50 Q10,30 30,10 Z"/></svg>
+        </div>
+
+        <section class="py-24 px-6 max-w-4xl mx-auto text-center">
+            <span class="font-serif italic text-sage text-2xl">Bismillahirrahmanirrahim</span>
+            <p class="mt-4 text-sm text-emeraldCustom/70 max-w-md mx-auto leading-relaxed">
+                "Dan di antara tanda-tanda (kebesaran-Nya) ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya."
+            </p>
+            <p class="text-xs text-gold font-semibold mt-2 tracking-widest">— QS. AR-RUM: 21 —</p>
+
+            <div class="mt-16 grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4">
+                    <div class="w-48 h-64 mx-auto rounded-t-full overflow-hidden border-2 border-gold/30 p-1">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400" alt="Romeo" class="w-full h-full object-cover rounded-t-full">
+                    </div>
+                    <h3 class="font-serif text-3xl text-emeraldCustom">Romeo Montague</h3>
+                    <p class="text-xs text-sage tracking-wider uppercase">Putra Pertama Dari</p>
+                    <p class="text-sm text-emeraldCustom/80">Bpk. Montague & Ibu Montague</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-48 h-64 mx-auto rounded-t-full overflow-hidden border-2 border-gold/30 p-1">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400" alt="Juliet" class="w-full h-full object-cover rounded-t-full">
+                    </div>
+                    <h3 class="font-serif text-3xl text-emeraldCustom">Juliet Capulet</h3>
+                    <p class="text-xs text-sage tracking-wider uppercase">Putri Kedua Dari</p>
+                    <p class="text-sm text-emeraldCustom/80">Bpk. Capulet & Ibu Capulet</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gold/20 max-w-xs mx-auto">
+
+        <section class="py-16 bg-sage/10 my-12 text-center">
+            <h2 class="font-serif text-3xl text-emeraldCustom mb-8">Menuju Hari Bahagia</h2>
+            <div class="flex justify-center gap-4 md:gap-8 text-emeraldCustom">
+                <div class="bg-ivory p-4 rounded-lg border border-gold/20 w-20">
+                    <span id="days" class="font-serif text-3xl font-bold block">00</span>
+                    <span class="text-xs text-sage uppercase">Hari</span>
+                </div>
+                <div class="bg-ivory p-4 rounded-lg border border-gold/20 w-20">
+                    <span id="hours" class="font-serif text-3xl font-bold block">00</span>
+                    <span class="text-xs text-sage uppercase">Jam</span>
+                </div>
+                <div class="bg-ivory p-4 rounded-lg border border-gold/20 w-20">
+                    <span id="minutes" class="font-serif text-3xl font-bold block">00</span>
+                    <span class="text-xs text-sage uppercase">Menit</span>
+                </div>
+                <div class="bg-ivory p-4 rounded-lg border border-gold/20 w-20">
+                    <span id="seconds" class="font-serif text-3xl font-bold block">00</span>
+                    <span class="text-xs text-sage uppercase">Detik</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-6 max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/60 p-8 rounded-2xl border border-gold/20 text-center shadow-sm">
+                    <h3 class="font-serif text-2xl text-emeraldCustom mb-2">Akad Nikah</h3>
+                    <p class="text-sm text-sage mb-6">Sabtu, 24 Oktober 2026</p>
+                    <p class="text-sm text-emeraldCustom/80 mb-2">Pukul: 08.00 - 10.00 WIB</p>
+                    <p class="text-sm text-emeraldCustom/80 font-medium mb-6">Grand Ballroom Hotel Mulia, Jakarta</p>
+                    <a href="https://maps.google.com" target="_blank" class="inline-block px-6 py-2 border border-emeraldCustom text-emeraldCustom hover:bg-emeraldCustom hover:text-ivory rounded-full text-xs tracking-wider transition-all">GOOGLE MAPS</a>
+                </div>
+                <div class="bg-white/60 p-8 rounded-2xl border border-gold/20 text-center shadow-sm">
+                    <h3 class="font-serif text-2xl text-emeraldCustom mb-2">Resepsi</h3>
+                    <p class="text-sm text-sage mb-6">Sabtu, 24 Oktober 2026</p>
+                    <p class="text-sm text-emeraldCustom/80 mb-2">Pukul: 11.00 - 14.00 WIB</p>
+                    <p class="text-sm text-emeraldCustom/80 font-medium mb-6">Grand Ballroom Hotel Mulia, Jakarta</p>
+                    <a href="https://maps.google.com" target="_blank" class="inline-block px-6 py-2 border border-emeraldCustom text-emeraldCustom hover:bg-emeraldCustom hover:text-ivory rounded-full text-xs tracking-wider transition-all">GOOGLE MAPS</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-6 max-w-5xl mx-auto text-center">
+            <h2 class="font-serif text-3xl text-emeraldCustom mb-8">Momen Bahagia</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=500" class="rounded-lg object-cover w-full h-64 hover:opacity-90 transition-opacity">
+                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=500" class="rounded-lg object-cover w-full h-64 hover:opacity-90 transition-opacity">
+                <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=500" class="rounded-lg object-cover w-full h-64 hover:opacity-90 transition-opacity">
+            </div>
+        </section>
+
+        <section class="py-16 px-6 max-w-xl mx-auto">
+            <div class="bg-white/80 p-8 rounded-2xl border border-gold/30 shadow-md">
+                <h2 class="font-serif text-3xl text-emeraldCustom text-center mb-6">Konfirmasi Kehadiran</h2>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Nama Lengkap" class="w-full px-4 py-3 bg-ivory border border-sage/30 rounded-lg text-sm focus:outline-none focus:border-gold">
+                    <select class="w-full px-4 py-3 bg-ivory border border-sage/30 rounded-lg text-sm focus:outline-none focus:border-gold">
+                        <option>Hadir</option>
+                        <option>Tidak Dapat Hadir</option>
+                    </select>
+                    <textarea placeholder="Ucapan & Doa" rows="4" class="w-full px-4 py-3 bg-ivory border border-sage/30 rounded-lg text-sm focus:outline-none focus:border-gold"></textarea>
+                    <button type="button" class="w-full py-3 bg-emeraldCustom text-ivory rounded-lg text-sm tracking-wider font-medium hover:bg-emeraldCustom/90 transition-all">KIRIM RSVP</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="py-16 px-6 max-w-xl mx-auto text-center">
+            <h2 class="font-serif text-3xl text-emeraldCustom mb-4">Amplop Digital</h2>
+            <p class="text-sm text-emeraldCustom/70 mb-8">Doa restu Anda merupakan hadiah terindah bagi kami. Namun jika ingin memberi hadiah, Anda dapat mengirimpan melalui:</p>
+            <div class="bg-white/80 p-6 rounded-xl border border-gold/30 shadow-sm inline-block w-full max-w-sm">
+                <p class="text-xs text-sage uppercase font-semibold mb-2">BCA - Bank Central Asia</p>
+                <p class="font-serif text-2xl font-bold text-emeraldCustom tracking-wider mb-1">123 456 7890</p>
+                <p class="text-xs text-emeraldCustom/80 mb-4">a.n. Romeo Montague</p>
+                <button onclick="navigator.clipboard.writeText('1234567890')" class="px-4 py-1.5 bg-sage/20 text-emeraldCustom text-xs rounded-full hover:bg-sage/40 transition-all">Salin Rekening</button>
+            </div>
+        </section>
+
+        <footer class="py-16 px-6 text-center border-t border-gold/20">
+            <h2 class="font-serif text-3xl text-emeraldCustom mb-4">Terima Kasih</h2>
+            <p class="text-sm text-emeraldCustom/70 max-w-md mx-auto mb-8">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+            <p class="font-serif italic text-2xl text-gold">Romeo & Juliet</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const bgMusic = document.getElementById('bg-music');
+        const musicIcon = document.getElementById('music-icon');
+        let isPlaying = false;
+
+        function openInvitation() {
+            document.getElementById('cover').classList.add('-translate-y-full', 'opacity-0');
+            document.getElementById('main-content').classList.remove('opacity-0');
+            document.getElementById('music-control').classList.remove('hidden');
+            
+            // Auto-play music
+            bgMusic.play();
+            isPlaying = true;
+        }
+
+        function toggleMusic() {
+            if (isPlaying) {
+                bgMusic.pause();
+                musicIcon.classList.replace('fa-music', 'fa-pause');
+            } else {
+                bgMusic.play();
+                musicIcon.classList.replace('fa-pause', 'fa-music');
+            }
+            isPlaying = !isPlaying;
+        }
+
+        // Countdown Timer Logic
+        const targetDate = new Date("October 24, 2026 08:00:00").getTime();
+        setInterval(() => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+            document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+        }, 1000);
+    </script>
 </body>
 </html>
